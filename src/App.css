@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  font-family: 'Bitter', serif;
+}
+
+#container {
+  width: 800px;
+  margin: 20px auto;
+  padding-bottom: 50px;
+  width: 50%;
+}
+
+#container h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+#quoteContainer {
+  width: 75%;
+  text-align: center;
+  padding: 10px;
+  margin: 20px auto;
+  margin-bottom: 40px;
+  height: 70px;
+}
+
+.fade-text {
+  animation: fadeText 1s;
+}
+.fade-text-too {
+  animation: fadeText 1s;
+}
+
+@keyframes fadeText {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#buttonContainer {
+  width: 100%;
+  text-align: center;
+}
+
+#quoteButton {
+  width: 200px;
+  margin-top: 10px;
+  border: 2px solid #6BBEF0;
+  color: #045;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  
+}
+
+#quoteButton:hover {
+  background: #6BBEF0;
+  color: white;
+}
+
+#quoteGenius {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  #quoteContainer {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1004px) {
+  #quoteContainer {
+    margin-bottom: 70px;
+  }
+}
